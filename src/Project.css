@@ -1,0 +1,30 @@
+.form-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+.form-input{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.from-submit{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-des{
+    width: 50%;
+    height: 100px;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: bottom;
+}

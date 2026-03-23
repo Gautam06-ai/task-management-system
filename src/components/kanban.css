@@ -1,0 +1,214 @@
+/* GLOBAL STYLES */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c1c1c);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+    color: rgb(18, 9, 9);
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* DASHBOARD */
+
+.dashboard {
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+/* SEARCH BAR */
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: blue;
+    transition: 0.3s;
+}
+
+.search-bar input:focus {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* TASK FORM */
+
+.task-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.task-form input,
+.task-form select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(144, 75, 75);
+    backdrop-filter: blur(10px);
+}
+
+.task-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: rgb(243, 243, 244);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.task-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* KANBAN BOARD */
+
+.kanban {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* COLUMN */
+
+.column {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.column:hover {
+    transform: translateY(-5px);
+}
+
+.column h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+/* TASK CARD */
+
+.task {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    transition: 0.3s;
+    position: relative;
+}
+
+.task:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* PRIORITY COLORS */
+
+.task.high {
+    border-left: 5px solid #ff4b5c;
+}
+
+.task.medium {
+    border-left: 5px solid #ffa502;
+}
+
+.task.low {
+    border-left: 5px solid #2ed573;
+}
+
+
+/* TAGS */
+
+.tags {
+    margin-top: 5px;
+}
+
+.tags span {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 3px 8px;
+    border-radius: 6px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+
+/* BUTTONS */
+
+.task button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    background: #00c6ff;
+    color: rgb(242, 242, 246);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.task button:hover {
+    background: #0072ff;
+    transform: scale(1.1);
+}
+
+
+/* COMMENTS */
+
+.task input {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(240, 240, 243);
+}
+
+.task h4 {
+    margin-top: 10px;
+}
